@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <title>Project</title></title>
-  <link rel="stylesheet" href="root/css/style.css">
-</head>
+<?php
+  $siteTitle = 'マイページ';
+  require('head.php');
+?>
 <body>
-
+  <!-- ヘッダー -->
+  <?php
+    require('header.php');
+  ?>
 </body>
 </html>
