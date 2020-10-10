@@ -152,6 +152,7 @@
 
 </div>
 
+あ
   <!-- footer -->
   <?php
     require('footer.php');
