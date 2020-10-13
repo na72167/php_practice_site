@@ -55,7 +55,7 @@
             // DBへ接続
             $dbh = dbConnect();
             // SQL文作成
-            $sql = 'INSERT INTO users (email,password,create_date) VALUES(:email,:pass,:create_date)';
+            $sql = 'INSERT INTO users (email,pass,create_date) VALUES(:email,:pass,:create_date)';
             $data = array(':email' => $email, ':pass' => password_hash($pass, PASSWORD_DEFAULT),
                           ':create_date' => date('Y-m-d H:i:s'));
             // クエリ実行
@@ -78,7 +78,7 @@
 
           } catch (Exception $e) {
             error_log('エラー発生:' . $e->getMessage());
-            $err_msg['common'] = MSG07;
+            $err_msg['common'] = ERROR_MS_07;
           }
 
         }
@@ -152,7 +152,6 @@
 
 </div>
 
-あ
   <!-- footer -->
   <?php
     require('footer.php');
